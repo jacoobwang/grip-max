@@ -2,21 +2,24 @@
 
 import { TikTokCard } from "@/components/ui/tiktok-card";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const VIDEOS = [
     {
         id: "1",
-        thumbnailUrl: "https://fastly.jsdelivr.net/gh/bucketio/img3@main/2026/01/03/1767447713377-697fd116-433f-4484-bd42-28ff2bcc5a6c.jpeg",
+        thumbnailUrl: "https://fastly.jsdelivr.net/gh/bucketio/img15@main/2026/01/03/1767451874930-fa90f350-24fe-418c-b355-624ec12a10e4.png",
         views: "1.2M",
         author: "driftking_99",
-        description: "The grip on this is insane! 🚗💨 #carsoftiktok #gripmax"
+        description: "The grip on this is insane! 🚗💨 #carsoftiktok #gripmax",
+        videoUrl: "https://www.tiktok.com/@user708131458558/video/7582134869812120863?is_from_webapp=1&sender_device=pc&web_id=7591125322473604663"
     },
     {
         id: "2",
-        thumbnailUrl: "https://fastly.jsdelivr.net/gh/bucketio/img3@main/2026/01/03/1767447713377-697fd116-433f-4484-bd42-28ff2bcc5a6c.jpeg",
+        thumbnailUrl: "https://fastly.jsdelivr.net/gh/bucketio/img1@main/2026/01/03/1767452022911-db7db3d1-46c5-495c-8779-6bc88e046ce1.png",
         views: "856K",
         author: "sarah_drives",
-        description: "Best storage hack for your steering wheel? Maybe not, but it looks cool! 😍"
+        description: "Best storage hack for your steering wheel? Maybe not, but it looks cool! 😍",
+        videoUrl: "https://www.tiktok.com/@user708131458558/video/7583171424769068319"
     },
     {
         id: "3",
@@ -45,9 +48,11 @@ export function UGCGallery() {
                     <h2 className="text-4xl md:text-6xl font-black text-white mb-6 uppercase">
                         Join the <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-orange-400">#GripMax</span> Squad
                     </h2>
-                    <Button variant="tiktok" size="lg" className="rounded-full">
-                        Follow us on TikTok
-                    </Button>
+                    <Link href="https://www.tiktok.com/@user708131458558" target="_blank">
+                        <Button variant="tiktok" size="lg" className="rounded-full cursor-pointer">
+                            Follow us on TikTok
+                        </Button>
+                    </Link>
                 </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

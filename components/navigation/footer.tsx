@@ -31,8 +31,8 @@ export function Footer() {
                     <div>
                         <h3 className="font-bold text-lg mb-4">Support</h3>
                         <ul className="space-y-2 text-sm text-gray-400">
-                            <li><Link href="/track-order" className="hover:text-brand-primary transition-colors">Track Order</Link></li>
-                            <li><Link href="/shipping" className="hover:text-brand-primary transition-colors">Shipping Info</Link></li>
+                            {/* <li><Link href="/track-order" className="hover:text-brand-primary transition-colors">Track Order</Link></li> */}
+                            {/* <li><Link href="/shipping" className="hover:text-brand-primary transition-colors">Shipping Info</Link></li> */}
                             <li><Link href="/returns" className="hover:text-brand-primary transition-colors">Returns & Exchange</Link></li>
                             <li><Link href="/faq" className="hover:text-brand-primary transition-colors">FAQs</Link></li>
                         </ul>

@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, Play } from "lucide-react";
+import Link from "next/link";
 
 export function HeroSection() {
     return (
@@ -34,10 +35,12 @@ export function HeroSection() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Button size="lg" className="h-14 px-8 text-lg rounded-full w-full sm:w-auto font-bold shadow-[0_0_20px_rgba(243,156,18,0.3)] hover:shadow-[0_0_30px_rgba(243,156,18,0.5)] transition-all">
-                            Shop Now <ArrowRight className="ml-2 w-5 h-5" />
-                        </Button>
-                        <Button size="lg" variant="outline" className="h-14 px-8 text-lg rounded-full w-full sm:w-auto bg-black/40 backdrop-blur-sm border-white/20 text-white hover:bg-white/10 hover:text-white">
+                        <Link href="https://vt.tiktok.com/ZTheu1sdy/" target="_blank">
+                            <Button size="lg" className="h-14 px-8 cursor-pointer text-lg rounded-full w-full sm:w-auto font-bold shadow-[0_0_20px_rgba(243,156,18,0.3)] hover:shadow-[0_0_30px_rgba(243,156,18,0.5)] transition-all">
+                                Shop Now <ArrowRight className="ml-2 w-5 h-5" />
+                            </Button>
+                        </Link>
+                        <Button size="lg" variant="outline" className="h-14 px-8 cursor-pointer text-lg rounded-full w-full sm:w-auto bg-black/40 backdrop-blur-sm border-white/20 text-white hover:bg-white/10 hover:text-white">
                             <Play className="mr-2 w-5 h-5 fill-white" /> Watch Video
                         </Button>
                     </div>
