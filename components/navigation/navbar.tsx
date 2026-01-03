@@ -16,7 +16,7 @@ export function Navbar() {
     }, []);
 
     const navLinks = [
-        { href: "/products", label: "Shop" },
+        { href: "https://vt.tiktok.com/ZTheu1sdy/", label: "Shop", target: "_blank" },
         { href: "/#reviews", label: "Reviews" },
         { href: "/about", label: "Our Story" },
     ];
@@ -35,6 +35,7 @@ export function Navbar() {
                         <Link
                             key={link.href}
                             href={link.href}
+                            target={link.target || "_self"}
                             className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
                         >
                             {link.label}
