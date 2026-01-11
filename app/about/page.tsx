@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/navigation/navbar";
 import { Footer } from "@/components/navigation/footer";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 
 export default function AboutPage() {
@@ -79,7 +80,9 @@ export default function AboutPage() {
                         <p className="text-gray-400 leading-relaxed mb-6">
                             Every feature you see on Grip Max comes from user feedback. The slim profile? You asked for it. The sweat-wicking lining? That was a suggestion from a comment with 5,000 likes.
                         </p>
-                        <Button size="lg" className="rounded-full">Join the Movement</Button>
+                        <Link href="https://vt.tiktok.com/ZTheu1sdy/" target="_blank">
+                            <Button size="lg" className="rounded-full cursor-pointer">Join the Movement</Button>
+                        </Link>
                     </div>
                 </div>
             </section>
