@@ -25,8 +25,9 @@ export function Navbar() {
         <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="text-2xl font-bold tracking-tighter text-white">
-                    GRIP<span className="text-brand-primary">MAX</span>
+                <Link href="/" className="flex items-center gap-2 text-2xl font-bold tracking-tighter text-white">
+                    <img src="/logo.png" alt="Grip Max Logo" className="h-10 w-auto" />
+                    <span>GRIP<span className="text-brand-primary">MAX</span></span>
                 </Link>
 
                 {/* Desktop Nav */}

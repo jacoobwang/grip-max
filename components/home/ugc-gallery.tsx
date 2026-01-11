@@ -11,7 +11,7 @@ const VIDEOS = [
         views: "122K",
         author: "user708131458558",
         description: "The grip on this is insane! 🚗💨 #carsoftiktok #gripmax",
-        videoUrl: "https://www.tiktok.com/@user708131458558/video/7582134869812120863?is_from_webapp=1&sender_device=pc&web_id=7591125322473604663"
+        videoUrl: "https://www.tiktok.com/@user708131458558/video/7582134869812120863"
     },
     {
         id: "2",

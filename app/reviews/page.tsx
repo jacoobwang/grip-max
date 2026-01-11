@@ -75,7 +75,7 @@ const wordVariants = {
             type: "spring",
             damping: 12,
             stiffness: 100,
-        },
+        } as const,
     },
 };
 
