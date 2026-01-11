@@ -21,9 +21,9 @@ export function Footer() {
                         <h3 className="font-bold text-lg mb-4">Shop</h3>
                         <ul className="space-y-2 text-sm text-gray-400">
                             <li><Link href="https://vt.tiktok.com/ZTheu1sdy/" className="hover:text-brand-primary transition-colors">All Products</Link></li>
-                            {/* <li><Link href="/products?category=alcantara" className="hover:text-brand-primary transition-colors">Alcantara Series</Link></li>
-                            <li><Link href="/products?category=leather" className="hover:text-brand-primary transition-colors">Premium Leather</Link></li>
-                            <li><Link href="/products?category=carbon" className="hover:text-brand-primary transition-colors">Carbon Fiber</Link></li> */}
+                            <li><Link href="https://vt.tiktok.com/ZTheu1sdy/" className="hover:text-brand-primary transition-colors">Alcantara Series</Link></li>
+                            <li><Link href="https://vt.tiktok.com/ZTheu1sdy/" className="hover:text-brand-primary transition-colors">Premium Leather</Link></li>
+                            <li><Link href="https://vt.tiktok.com/ZTheu1sdy/" className="hover:text-brand-primary transition-colors">Carbon Fiber</Link></li>
                         </ul>
                     </div>
 
@@ -68,10 +68,10 @@ export function Footer() {
 
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
                     <p>© {new Date().getFullYear()} Grip Max. All rights reserved.</p>
-                    <div className="flex gap-4 mt-4 md:mt-0">
+                    {/* <div className="flex gap-4 mt-4 md:mt-0">
                         <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>
                         <Link href="/terms" className="hover:text-white">Terms of Service</Link>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </footer>
