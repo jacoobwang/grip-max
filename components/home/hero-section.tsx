@@ -40,9 +40,9 @@ export function HeroSection() {
                                 Shop Now <ArrowRight className="ml-2 w-5 h-5" />
                             </Button>
                         </Link>
-                        <Button size="lg" variant="outline" className="h-14 px-8 cursor-pointer text-lg rounded-full w-full sm:w-auto bg-black/40 backdrop-blur-sm border-white/20 text-white hover:bg-white/10 hover:text-white">
+                        {/* <Button size="lg" variant="outline" className="h-14 px-8 cursor-pointer text-lg rounded-full w-full sm:w-auto bg-black/40 backdrop-blur-sm border-white/20 text-white hover:bg-white/10 hover:text-white">
                             <Play className="mr-2 w-5 h-5 fill-white" /> Watch Video
-                        </Button>
+                        </Button> */}
                     </div>
                 </motion.div>
             </div>

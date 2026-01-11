@@ -20,10 +20,10 @@ export function Footer() {
                     <div>
                         <h3 className="font-bold text-lg mb-4">Shop</h3>
                         <ul className="space-y-2 text-sm text-gray-400">
-                            <li><Link href="/products" className="hover:text-brand-primary transition-colors">All Products</Link></li>
-                            <li><Link href="/products?category=alcantara" className="hover:text-brand-primary transition-colors">Alcantara Series</Link></li>
+                            <li><Link href="https://vt.tiktok.com/ZTheu1sdy/" className="hover:text-brand-primary transition-colors">All Products</Link></li>
+                            {/* <li><Link href="/products?category=alcantara" className="hover:text-brand-primary transition-colors">Alcantara Series</Link></li>
                             <li><Link href="/products?category=leather" className="hover:text-brand-primary transition-colors">Premium Leather</Link></li>
-                            <li><Link href="/products?category=carbon" className="hover:text-brand-primary transition-colors">Carbon Fiber</Link></li>
+                            <li><Link href="/products?category=carbon" className="hover:text-brand-primary transition-colors">Carbon Fiber</Link></li> */}
                         </ul>
                     </div>
 
@@ -32,9 +32,9 @@ export function Footer() {
                         <h3 className="font-bold text-lg mb-4">Support</h3>
                         <ul className="space-y-2 text-sm text-gray-400">
                             {/* <li><Link href="/track-order" className="hover:text-brand-primary transition-colors">Track Order</Link></li> */}
-                            {/* <li><Link href="/shipping" className="hover:text-brand-primary transition-colors">Shipping Info</Link></li> */}
+                            {/* <li><Link href="/shipping" className="hover:text-brand-primary transition-colors">Contact US</Link></li> */}
                             <li><Link href="/returns" className="hover:text-brand-primary transition-colors">Returns & Exchange</Link></li>
-                            <li><Link href="/faq" className="hover:text-brand-primary transition-colors">FAQs</Link></li>
+                            {/* <li><Link href="/faq" className="hover:text-brand-primary transition-colors">FAQs</Link></li> */}
                         </ul>
                     </div>
 

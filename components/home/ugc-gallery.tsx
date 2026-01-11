@@ -8,8 +8,8 @@ const VIDEOS = [
     {
         id: "1",
         thumbnailUrl: "https://fastly.jsdelivr.net/gh/bucketio/img15@main/2026/01/03/1767451874930-fa90f350-24fe-418c-b355-624ec12a10e4.png",
-        views: "1.2M",
-        author: "driftking_99",
+        views: "122K",
+        author: "user708131458558",
         description: "The grip on this is insane! 🚗💨 #carsoftiktok #gripmax",
         videoUrl: "https://www.tiktok.com/@user708131458558/video/7582134869812120863?is_from_webapp=1&sender_device=pc&web_id=7591125322473604663"
     },
@@ -17,23 +17,25 @@ const VIDEOS = [
         id: "2",
         thumbnailUrl: "https://fastly.jsdelivr.net/gh/bucketio/img1@main/2026/01/03/1767452022911-db7db3d1-46c5-495c-8779-6bc88e046ce1.png",
         views: "856K",
-        author: "sarah_drives",
+        author: "user708131458xxx",
         description: "Best storage hack for your steering wheel? Maybe not, but it looks cool! 😍",
         videoUrl: "https://www.tiktok.com/@user708131458558/video/7583171424769068319"
     },
     {
         id: "3",
-        thumbnailUrl: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80&w=600&h=1066",
-        views: "2.5M",
-        author: "carbon_mike",
-        description: "Installation took literally 30 seconds. Look at that finish. 🔥"
+        thumbnailUrl: "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oMQYk2BphNLORFeehuTOeZsAgxIyseqQdA4sGc~tplv-tiktokx-origin.image?dr=9636&x-expires=1768305600&x-signature=viQ1X2pKoEfGUvfblIv/c/dCvo4=&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+        views: "880K",
+        author: "pukhtana874",
+        description: "Installation took literally 30 seconds. Look at that finish. 🔥",
+        videoUrl: "https://www.tiktok.com/@pukhtana874/video/7581310233646091575"
     },
     {
         id: "4",
-        thumbnailUrl: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&q=80&w=600&h=1066",
-        views: "500K",
-        author: "night_rider",
-        description: "Night drive vibes with the Alcantara cover. 🌃"
+        thumbnailUrl: "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/o8VD2ATAEBeAQTFApowAzdrf2q2RCdEIFIE5FO~tplv-tiktokx-origin.image?dr=9636&x-expires=1768305600&x-signature=pjUXHDhSlbNoyqqfNbbyU+FRj9M=&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+        views: "50K",
+        author: "user708131458558",
+        description: "You Just Installed the EASIEST Steering Wheel Cover EVER! & (White Leather Edition) 🌃",
+        videoUrl: "https://www.tiktok.com/@user708131458558/video/7575822555232079135"
     },
 ];
 

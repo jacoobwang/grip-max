@@ -17,12 +17,12 @@ const PRODUCTS = [
     },
     {
         id: "alcantara-black",
-        name: "Leather 5D Universal Steering Wheel Cover with Centering Mark Quick Install Non Slip Breathable Ultra Thin Fit for All Seasons Automotive Accessory White Premium Quality Wheel Cover for GMC and Chevy Anti-Slip Wheel Cover non-slip protector breathable ult",
-        price: 23.54,
-        originalPrice: 49.99,
-        rating: 4.9,
+        name: "Land Diamond Bling Car Steering Wheel Cover with Crystal Rhinestones 3PCS Segmented Protector Universal Fit for 99% Cars Women's Christmas Gift land diamond bling car accessories girls Leather quick turn",
+        price: 13.98,
+        originalPrice: 39.99,
+        rating: 5,
         reviews: 1040,
-        image: "https://fastly.jsdelivr.net/gh/bucketio/img6@main/2026/01/03/1767447826713-bc3b5677-b305-46ef-8881-96a8b464185e.jpeg",
+        image: "https://fastly.jsdelivr.net/gh/bucketio/img6@main/2026/01/07/1767799393321-ed7b11a6-8993-4018-a382-0f8ed33a39d6.png",
         badge: "Hot Sale"
     },
     {
