@@ -53,10 +53,10 @@ export function TikTokCard({
             {isPlaying && videoId ? (
                 <div className="absolute inset-0 z-20">
                     <iframe
-                        src={`https://www.tiktok.com/embed/v2/${videoId}`}
+                        src={`https://www.tiktok.com/player/v1/${videoId}?music_info=1&description=1`}
                         className="w-full h-full"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="no-referrer"
+                        allowFullScreen
                         title={`TikTok video by ${author}`}
                     ></iframe>
                 </div>

@@ -13,7 +13,8 @@ const PRODUCTS = [
         rating: 4.8,
         reviews: 1298,
         image: "https://fastly.jsdelivr.net/gh/bucketio/img3@main/2026/01/03/1767448236424-42cef92c-82bb-4302-a40d-5feb20ef6f05.jpeg",
-        badge: "Best Seller"
+        badge: "Best Seller",
+        link: "https://www.tiktok.com/shop/pdp/leather-5d-universal-steering-wheel-cover-quick-install/1732063144486080617?source=ecommerce_store&enter_method=feed_list_store_list_product&first_entrance=unknown&first_entrance_tt_scene=third_party",
     },
     {
         id: "alcantara-black",
@@ -23,7 +24,8 @@ const PRODUCTS = [
         rating: 5,
         reviews: 1040,
         image: "https://fastly.jsdelivr.net/gh/bucketio/img6@main/2026/01/07/1767799393321-ed7b11a6-8993-4018-a382-0f8ed33a39d6.png",
-        badge: "Hot Sale"
+        badge: "Hot Sale",
+        link: "https://www.tiktok.com/shop/pdp/diamond-bling-car-steering-wheel-cover-3pcs-universal-fit/1732152036195209321?source=ecommerce_store&enter_method=feed_list_store_list_product&first_entrance=unknown&first_entrance_tt_scene=third_party",
     },
     {
         id: "leather-classic",
@@ -32,7 +34,8 @@ const PRODUCTS = [
         rating: 4.7,
         reviews: 632,
         image: "https://fastly.jsdelivr.net/gh/bucketio/img12@main/2026/01/03/1767448808485-6ad5bf52-0e8d-4c5f-8e08-4b901bd0fe1d.jpg",
-        badge: "Hot Sale"
+        badge: "Hot Sale",
+        link: "https://www.tiktok.com/shop/pdp/diamond-bling-car-steering-wheel-cover-3pcs-universal-fit/1732152036195209321?source=ecommerce_store&enter_method=feed_list_store_list_product&first_entrance=unknown&first_entrance_tt_scene=third_party",
     },
     {
         id: "cyber-punk",
@@ -41,7 +44,8 @@ const PRODUCTS = [
         rating: 5.0,
         reviews: 215,
         image: "https://fastly.jsdelivr.net/gh/bucketio/img16@main/2026/01/03/1767448986509-3cc89f4e-5c0f-4a1c-a1c6-98c3823f4059.png",
-        badge: "Hot Sale"
+        badge: "Hot Sale",
+        link: "https://www.tiktok.com/shop/pdp/mens-5d-laser-carbon-fiber-steering-wheel-cover-15-universal-fit/1732176377774772329?source=ecommerce_store&enter_method=feed_list_store_list_product&first_entrance=unknown&first_entrance_tt_scene=third_party",
     }
 ];
 

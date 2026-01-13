@@ -30,7 +30,7 @@ export default function AboutPage() {
 
             {/* Story Sections */}
             <section className="py-24 container mx-auto px-4">
-                <div className="grid md:grid-cols-2 gap-16 items-center mb-32">
+                <div className="grid md:grid-cols-1 gap-16 items-center mb-32">
                     <div>
                         <h2 className="text-3xl font-bold mb-6 text-brand-primary">The Problem</h2>
                         <p className="text-gray-400 leading-relaxed mb-6">
@@ -39,26 +39,6 @@ export default function AboutPage() {
                         <p className="text-gray-400 leading-relaxed">
                             So we went to work. We tested hundreds of materials, from carbon fiber to Italian Alcantara, focusing on one thing: <strong className="text-white">The Grip.</strong>
                         </p>
-                    </div>
-                    <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10 text-gray-400 bg-zinc-900 flex items-center justify-center">
-                        {/* Placeholder for factory/design video */}
-                        <span className="flex items-center gap-2">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            >
-                                <circle cx="12" cy="12" r="10" />
-                                <polygon points="10 8 16 12 10 16 10 8" />
-                            </svg>
-                            Watch our design process
-                        </span>
                     </div>
                 </div>
 
@@ -71,7 +51,7 @@ export default function AboutPage() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
                         <div className="absolute bottom-8 left-8">
-                            <p className="font-bold text-2xl">100,000+ Customers</p>
+                            <p className="font-bold text-2xl">10,000+ Customers</p>
                             <p className="text-brand-primary">Worldwide</p>
                         </div>
                     </div>

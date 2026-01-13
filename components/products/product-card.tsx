@@ -14,6 +14,7 @@ interface ProductCardProps {
     reviews: number;
     image: string;
     badge?: string;
+    link: string;
 }
 
 export function ProductCard({
@@ -25,6 +26,7 @@ export function ProductCard({
     reviews,
     image,
     badge,
+    link,
 }: ProductCardProps) {
     return (
         <div className="group relative bg-[#1A1A1A] rounded-lg overflow-hidden border border-white/5 hover:border-brand-primary/50 transition-colors">
@@ -36,7 +38,7 @@ export function ProductCard({
             )}
 
             {/* Image Area */}
-            <Link href={`/products/${id}`} className="block relative aspect-square bg-[#111]">
+            <Link href={link} target="_blank" className="block relative aspect-square bg-[#111]">
                 <img
                     src={image}
                     alt={name}
@@ -52,7 +54,7 @@ export function ProductCard({
 
             {/* Content */}
             <div className="p-4">
-                <Link href={`/products/${id}`}>
+                <Link href={link} target="_blank">
                     <h3 className="text-white font-medium mb-1 truncate hover:text-brand-primary transition-colors">{name}</h3>
                 </Link>
 
