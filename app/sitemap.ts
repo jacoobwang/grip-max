@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://gripmax.com'; // Update with your actual domain
+    const baseUrl = 'https://gripmax.cc'; // Update with your actual domain
 
     // Static routes
     const staticRoutes = [

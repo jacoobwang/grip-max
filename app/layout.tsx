@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://gripmax.com"), // Update with actual domain
+  metadataBase: new URL("https://gripmax.cc"), // Update with actual domain
   alternates: {
     canonical: "/",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Grip Max | Premium Steering Wheel Covers - TikTok's Favorite",
     description:
       "Transform your drive with Grip Max - the premium steering wheel cover that went viral on TikTok. Alcantara, carbon fiber, and premium materials.",
-    url: "https://gripmax.com",
+    url: "https://gripmax.cc",
     siteName: "Grip Max",
     images: [
       {
@@ -94,8 +94,8 @@ export default function RootLayout({
     name: "Grip Max",
     description:
       "Premium steering wheel covers - TikTok's favorite car accessory brand",
-    url: "https://gripmax.com",
-    logo: "https://gripmax.com/logo.png",
+    url: "https://gripmax.cc",
+    logo: "https://gripmax.cc/logo.png",
     sameAs: [
       "https://www.tiktok.com/@gripmax", // Update with actual handle
       "https://www.instagram.com/gripmax", // Update with actual handle

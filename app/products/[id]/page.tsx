@@ -50,7 +50,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
     const productSchema = {
         "@context": "https://schema.org",
         "@type": "Product",
-        "@id": `https://gripmax.com/products/${productId}`,
+        "@id": `https://gripmax.cc/products/${productId}`,
         name: `Grip Max Premium Steering Wheel Cover - Model ${productId}`,
         description: "Premium Alcantara steering wheel cover with perfect fit and superior grip.",
         image: PRODUCT_IMAGES[0],
@@ -60,7 +60,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
         },
         offers: {
             "@type": "Offer",
-            url: `https://gripmax.com/products/${productId}`,
+            url: `https://gripmax.cc/products/${productId}`,
             priceCurrency: "USD",
             price: 49.99,
             availability: "https://schema.org/InStock",
@@ -87,19 +87,19 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://gripmax.com",
+                item: "https://gripmax.cc",
             },
             {
                 "@type": "ListItem",
                 position: 2,
                 name: "Products",
-                item: "https://gripmax.com/products",
+                item: "https://gripmax.cc/products",
             },
             {
                 "@type": "ListItem",
                 position: 3,
                 name: `Model ${productId}`,
-                item: `https://gripmax.com/products/${productId}`,
+                item: `https://gripmax.cc/products/${productId}`,
             },
         ],
     };
