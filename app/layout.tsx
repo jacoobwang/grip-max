@@ -103,7 +103,7 @@ export default function RootLayout({
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "Customer Service",
-      email: "support@gripmax.com",
+      email: "support@gripmax.cc",
     },
   };
 
