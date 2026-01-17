@@ -19,7 +19,7 @@ export function getOrganizationSchema() {
             '@type': 'ContactPoint',
             telephone: '+1-XXX-XXX-XXXX', // Update with actual phone number
             contactType: 'Customer Service',
-            email: 'support@gripmax.com',
+            email: 'support@gripmax.cc',
         },
     };
 }

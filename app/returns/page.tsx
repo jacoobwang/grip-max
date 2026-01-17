@@ -37,7 +37,7 @@ export default function ReturnsPage() {
                         <section>
                             <h3 className="text-xl font-bold text-white mb-3">How to Start a Return</h3>
                             <p className="mb-4">
-                                To start a return, you can contact us at <a href="mailto:support@gripmax.com" className="text-brand-primary hover:underline">support@gripmax.com</a>.
+                                To start a return, you can contact us at <a href="mailto:support@gripmax.cc" className="text-brand-primary hover:underline">support@gripmax.cc</a>.
                                 Please include your order number and reason for return.
                             </p>
                             <p>
