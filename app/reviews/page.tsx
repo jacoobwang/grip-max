@@ -2,6 +2,10 @@
 
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import { Metadata } from "next";
+
+// Note: Metadata export moved to a separate server component wrapper
+// For now, we'll add JSON-LD in the component itself since this is a client component
 
 // Mock Data
 const REVIEWS = [
@@ -83,8 +87,30 @@ export default function ReviewsPage() {
     const titleText = "A trusted choice, backed by customer testimonials.";
     const titleWords = titleText.split(" ");
 
+    // AggregateRating JSON-LD Schema
+    const aggregateRatingSchema = {
+        "@context": "https://schema.org",
+        "@type": "AggregateRating",
+        itemReviewed: {
+            "@type": "Product",
+            name: "Grip Max Steering Wheel Covers",
+            brand: {
+                "@type": "Brand",
+                name: "Grip Max",
+            },
+        },
+        ratingValue: 4.9,
+        reviewCount: 1250,
+        bestRating: 5,
+        worstRating: 1,
+    };
+
     return (
         <main className="min-h-screen bg-black text-white pt-32 pb-20">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateRatingSchema) }}
+            />
             <div className="container mx-auto px-4">
                 {/* Header Section */}
                 <div className="mb-20 text-center max-w-4xl mx-auto relative">

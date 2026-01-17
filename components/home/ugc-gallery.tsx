@@ -6,14 +6,6 @@ import Link from "next/link";
 
 const VIDEOS = [
     {
-        id: "0",
-        thumbnailUrl: "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oUgvBVB44JBIE4UUWXX95inwJC3sFiEZAkRrq~tplv-tiktokx-origin.image?dr=9636&x-expires=1768489200&x-signature=8o1yBlxYoFwc9vPUzxjhTdleC8k=&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
-        views: "2.5M",
-        author: "OfficialLemonDust",
-        description: "Im sure we all know the pain 🫠#pov #car #trucktok",
-        videoUrl: "https://www.tiktok.com/@lemon_dust16/video/7406476810793291051"
-    },
-    {
         id: "1",
         thumbnailUrl: "https://fastly.jsdelivr.net/gh/bucketio/img15@main/2026/01/03/1767451874930-fa90f350-24fe-418c-b355-624ec12a10e4.png",
         views: "122K",
@@ -44,31 +36,7 @@ const VIDEOS = [
         author: "user708131458558",
         description: "You Just Installed the EASIEST Steering Wheel Cover EVER! & (White Leather Edition) 🌃",
         videoUrl: "https://www.tiktok.com/@user708131458558/video/7575822555232079135"
-    },
-    {
-        id: "5",
-        thumbnailUrl: "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/okIJvVEBhSqBPB14IavIKvg8xPFoDmWiAipiU~tplv-tiktokx-origin.image?dr=9636&x-expires=1768489200&x-signature=5/N2VIyF/JO8sihmtSyenxrtOnQ=&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
-        views: "222K",
-        author: "drivewithql",
-        description: "Girls get it 😎 #fypシ #bedazzled #queensland",
-        videoUrl: "https://www.tiktok.com/@drivewithql/video/7589311354289360141"
-    },
-    {
-        id: "6",
-        thumbnailUrl: "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oky8QA23DkD8UIQN0ELeHCALrNfdP6IejBGiIr~tplv-tiktokx-origin.image?dr=9636&x-expires=1768489200&x-signature=th9cZEa/k/+8f3Gl5/+QmieMfa4=&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
-        views: "1.2M",
-        author: "WildWayne87",
-        description: "How It Be When You’re Putting On A Steering Wheel Cover. #car #fypシ゚viral",
-        videoUrl: "https://www.tiktok.com/@wildwayne87/video/7388185832428948779"
-    },
-    {
-        id: "7",
-        thumbnailUrl: "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/owT0BfxUDEJpFvcE1YEmJLEvWBVIfntAj2R8rA~tplv-tiktokx-origin.image?dr=9636&x-expires=1768489200&x-signature=K1+LcpUbulhw3OmkThKtrGl3dig=&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
-        views: "122K",
-        author: "Vic 🦇",
-        description: "The smoothest steering wheel cover ever  #cars #steeringwheel #civic #carassosories",
-        videoUrl: "https://www.tiktok.com/@victhecivic/video/7590987479164013855"
-    },
+    }
 ];
 
 export function UGCGallery() {

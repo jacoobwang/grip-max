@@ -3,6 +3,7 @@ import { Footer } from "@/components/navigation/footer";
 import { ProductGallery } from "@/components/product-detail/product-gallery";
 import { ProductInfo } from "@/components/product-detail/product-info";
 import { UGCGallery } from "@/components/home/ugc-gallery"; // Reusing UGC gallery
+import { Metadata } from "next";
 
 // Mock images
 const PRODUCT_IMAGES = [
@@ -12,9 +13,107 @@ const PRODUCT_IMAGES = [
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=1000",
 ];
 
-export default function ProductPage() {
+// Generate dynamic metadata for product pages
+export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+    // In a real app, you would fetch product data here
+    const productId = params.id;
+
+    return {
+        title: `Premium Steering Wheel Cover - Model ${productId}`,
+        description: `Shop the Grip Max Premium Steering Wheel Cover Model ${productId}. Alcantara finish, perfect fit, 4.8-star rating. Free shipping on orders over $50.`,
+        keywords: [
+            `steering wheel cover model ${productId}`,
+            "premium steering wheel",
+            "alcantara steering wheel cover",
+            "luxury car accessories",
+        ],
+        openGraph: {
+            title: `Grip Max Premium Steering Wheel Cover - Model ${productId}`,
+            description: "Premium Alcantara steering wheel cover with perfect fit and 4.8-star rating.",
+            type: "article", // Using 'article' as 'product' is not supported in Next.js OpenGraph
+            images: [
+                {
+                    url: PRODUCT_IMAGES[0],
+                    width: 1200,
+                    height: 630,
+                    alt: `Grip Max Steering Wheel Cover Model ${productId}`,
+                },
+            ],
+        },
+    };
+}
+
+export default function ProductPage({ params }: { params: { id: string } }) {
+    const productId = params.id;
+
+    // Product JSON-LD Schema
+    const productSchema = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "@id": `https://gripmax.com/products/${productId}`,
+        name: `Grip Max Premium Steering Wheel Cover - Model ${productId}`,
+        description: "Premium Alcantara steering wheel cover with perfect fit and superior grip.",
+        image: PRODUCT_IMAGES[0],
+        brand: {
+            "@type": "Brand",
+            name: "Grip Max",
+        },
+        offers: {
+            "@type": "Offer",
+            url: `https://gripmax.com/products/${productId}`,
+            priceCurrency: "USD",
+            price: 49.99,
+            availability: "https://schema.org/InStock",
+            seller: {
+                "@type": "Organization",
+                name: "Grip Max",
+            },
+        },
+        aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: 4.8,
+            reviewCount: 350,
+            bestRating: 5,
+            worstRating: 1,
+        },
+    };
+
+    // Breadcrumb JSON-LD Schema
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+            {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://gripmax.com",
+            },
+            {
+                "@type": "ListItem",
+                position: 2,
+                name: "Products",
+                item: "https://gripmax.com/products",
+            },
+            {
+                "@type": "ListItem",
+                position: 3,
+                name: `Model ${productId}`,
+                item: `https://gripmax.com/products/${productId}`,
+            },
+        ],
+    };
+
     return (
         <main className="min-h-screen bg-black text-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Navbar />
 
             <div className="container mx-auto px-4 py-24 md:py-32">
