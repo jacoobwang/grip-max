@@ -13,6 +13,19 @@ const PRODUCT_IMAGES = [
     "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=1000",
 ];
 
+const PRODUCT_IDS = [
+    "carbon-fiber-red",
+    "alcantara-black",
+    "leather-classic",
+    "cyber-punk",
+];
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+    return PRODUCT_IDS.map((id) => ({ id }));
+}
+
 // Generate dynamic metadata for product pages
 export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
     // In a real app, you would fetch product data here

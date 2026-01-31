@@ -3,7 +3,6 @@
 import { Navbar } from "@/components/navigation/navbar";
 import { Footer } from "@/components/navigation/footer";
 import { motion } from "framer-motion";
-import { Metadata } from "next";
 
 // Note: Metadata export moved to a separate server component wrapper would be ideal
 // For now, metadata should be added in a parent layout or server component

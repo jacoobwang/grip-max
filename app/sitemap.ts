@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://gripmax.cc'; // Update with your actual domain
 
@@ -32,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ];
 
     // Dynamic product routes (add your actual product IDs here)
-    const productIds = ['1', '2', '3']; // Replace with actual product IDs from your data
+    const productIds = ['carbon-fiber-red', 'alcantara-black', 'leather-classic', 'cyber-punk'];
     const productRoutes = productIds.map((id) => ({
         url: `${baseUrl}/products/${id}`,
         lastModified: new Date(),

@@ -143,7 +143,7 @@ export function ReviewsSection() {
                                 <span className="text-xs text-zinc-500">{review.date}</span>
                             </div>
 
-                            <p className="text-gray-300 mb-6 leading-relaxed">"{review.text}"</p>
+                            <p className="text-gray-300 mb-6 leading-relaxed">&quot;{review.text}&quot;</p>
 
                             <div className="flex items-center gap-3">
                                 <div className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center font-bold text-zinc-400 group-hover:bg-brand-primary group-hover:text-black transition-colors">

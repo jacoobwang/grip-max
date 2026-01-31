@@ -41,7 +41,7 @@ export default function AboutPage() {
                         Born on <span className="text-brand-primary">TikTok</span>
                     </h1>
                     <p className="text-xl text-gray-300 leading-relaxed">
-                        We didn't start in a boardroom. We started with a viral video, a few prototypes, and a community of car enthusiasts who demanded better.
+                        We didn&apos;t start in a boardroom. We started with a viral video, a few prototypes, and a community of car enthusiasts who demanded better.
                     </p>
                 </div>
             </section>
@@ -52,7 +52,7 @@ export default function AboutPage() {
                     <div>
                         <h2 className="text-3xl font-bold mb-6 text-brand-primary">The Problem</h2>
                         <p className="text-gray-400 leading-relaxed mb-6">
-                            Most steering wheel covers are bulky, ugly, and slip around. We saw thousands of comments on social media complaining about the same thing. Why wasn't there a cover that actually looked like it belonged in a modern car?
+                            Most steering wheel covers are bulky, ugly, and slip around. We saw thousands of comments on social media complaining about the same thing. Why wasn&apos;t there a cover that actually looked like it belonged in a modern car?
                         </p>
                         <p className="text-gray-400 leading-relaxed">
                             So we went to work. We tested hundreds of materials, from carbon fiber to Italian Alcantara, focusing on one thing: <strong className="text-white">The Grip.</strong>
