@@ -19,6 +19,7 @@ export function Navbar() {
         { href: "https://vt.tiktok.com/ZTheu1sdy/", label: "Shop", target: "_blank" },
         { href: "/#reviews", label: "Reviews" },
         { href: "/about", label: "Our Story" },
+        { href: "/blog", label: "Blog" },
     ];
 
     return (
