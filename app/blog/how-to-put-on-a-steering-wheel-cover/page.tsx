@@ -1,8 +1,9 @@
 import { Navbar } from "@/components/navigation/navbar";
 import { Footer } from "@/components/navigation/footer";
+import { ShareSection } from "@/components/blog/share-section";
 import { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, Calendar, Clock, Share2 } from "lucide-react";
+import { ArrowLeft, Calendar, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "How to Put on a Steering Wheel Cover | Grip Max",
@@ -207,18 +208,7 @@ export default function BlogPostPage() {
             </p>
           </div>
 
-          {/* Share Section */}
-          <div className="mt-12 pt-8 border-t border-white/10">
-            <div className="flex items-center gap-3 mb-4">
-              <Share2 className="w-5 h-5 text-brand-primary" />
-              <span className="font-medium">Share this article</span>
-            </div>
-            <div className="flex gap-3">
-              <button className="px-4 py-2 bg-white/10 hover:bg-brand-primary/20 rounded-lg text-sm font-medium transition-colors">
-                Copy Link
-              </button>
-            </div>
-          </div>
+          <ShareSection />
         </div>
       </article>
 
