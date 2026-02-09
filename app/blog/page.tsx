@@ -20,6 +20,15 @@ const blogPosts = [
     readTime: "5 min read",
     category: "Installation Guide",
   },
+  {
+    slug: "upgrade-your-driving-experience-with-a-carbon-fiber-steering-wheel-cover",
+    title: "Upgrade Your Driving Experience with a Carbon Fiber Steering Wheel Cover",
+    excerpt:
+      "Discover how a carbon fiber steering wheel cover can transform comfort, control, and style every time you drive.",
+    date: "2026-02-09",
+    readTime: "7 min read",
+    category: "Product Guide",
+  },
 ];
 
 export default function BlogPage() {
