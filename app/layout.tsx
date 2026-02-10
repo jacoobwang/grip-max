@@ -97,13 +97,31 @@ export default function RootLayout({
     url: "https://www.gripmax.cc",
     logo: "https://www.gripmax.cc/logo.png",
     sameAs: [
-      "https://www.tiktok.com/@gripmax", // Update with actual handle
-      "https://www.instagram.com/gripmax", // Update with actual handle
+      "https://www.tiktok.com/@gripmax",
+      "https://www.instagram.com/gripmax",
     ],
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "Customer Service",
       email: "support@gripmax.cc",
+    },
+  };
+
+  // WebSite JSON-LD Schema
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Grip Max",
+    url: "https://www.gripmax.cc",
+    description:
+      "Premium steering wheel covers - TikTok's favorite car accessory brand",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://www.gripmax.cc/search?q={search_term_string}",
+      },
+      "query-input": "required name=search_term_string",
     },
   };
 
@@ -113,6 +131,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
       <body className={`${outfit.variable} antialiased`}>{children}</body>

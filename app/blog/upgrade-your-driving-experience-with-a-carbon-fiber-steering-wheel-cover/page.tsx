@@ -4,17 +4,43 @@ import { ShareSection } from "@/components/blog/share-section";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
+import { getArticleSchema } from "@/lib/seo-utils";
 
 export const metadata: Metadata = {
   title:
     "Upgrade Your Driving Experience with a Carbon Fiber Steering Wheel Cover | Grip Max",
   description:
     "See how a carbon fiber steering wheel cover can instantly improve grip, comfort, and style while protecting your wheel from daily wear.",
+  keywords: [
+    "carbon fiber steering wheel cover",
+    "steering wheel upgrade",
+    "car interior upgrade",
+    "carbon fiber accessories",
+  ],
+  openGraph: {
+    type: "article",
+    publishedTime: "2026-02-09T00:00:00Z",
+  },
 };
 
 export default function BlogPostPage() {
+  const articleSchema = getArticleSchema({
+    title:
+      "Upgrade Your Driving Experience with a Carbon Fiber Steering Wheel Cover",
+    description:
+      "See how a carbon fiber steering wheel cover can instantly improve grip, comfort, and style while protecting your wheel from daily wear.",
+    url: "https://www.gripmax.cc/blog/upgrade-your-driving-experience-with-a-carbon-fiber-steering-wheel-cover",
+    image: "/logo.png",
+    datePublished: "2026-02-09T00:00:00Z",
+    dateModified: "2026-02-09T00:00:00Z",
+  });
+
   return (
     <main className="min-h-screen bg-black text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <Navbar />
 
       <article className="pt-32 pb-24 px-4">

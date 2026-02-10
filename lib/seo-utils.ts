@@ -122,6 +122,86 @@ export function getBreadcrumbSchema(items: { name: string; url: string }[]) {
     };
 }
 
+// WebSite JSON-LD Schema
+export function getWebSiteSchema() {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'Grip Max',
+        url: BASE_URL,
+        description: 'Premium steering wheel covers - TikTok\'s favorite car accessory brand',
+        potentialAction: {
+            '@type': 'SearchAction',
+            target: {
+                '@type': 'EntryPoint',
+                urlTemplate: `${BASE_URL}/search?q={search_term_string}`,
+            },
+            'query-input': 'required name=search_term_string',
+        },
+    };
+}
+
+// Article JSON-LD Schema for blog posts
+export function getArticleSchema({
+    title,
+    description,
+    url,
+    image,
+    datePublished,
+    dateModified,
+    authorName = 'Grip Max',
+}: {
+    title: string;
+    description: string;
+    url: string;
+    image: string;
+    datePublished: string;
+    dateModified?: string;
+    authorName?: string;
+}) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: title,
+        description,
+        image: image.startsWith('http') ? image : `${BASE_URL}${image}`,
+        datePublished,
+        dateModified: dateModified || datePublished,
+        author: {
+            '@type': 'Person',
+            name: authorName,
+        },
+        publisher: {
+            '@type': 'Organization',
+            name: 'Grip Max',
+            logo: {
+                '@type': 'ImageObject',
+                url: `${BASE_URL}/logo.png`,
+            },
+        },
+        mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id': url,
+        },
+    };
+}
+
+// FAQ JSON-LD Schema
+export function getFAQSchema(faqs: { question: string; answer: string }[]) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqs.map((faq) => ({
+            '@type': 'Question',
+            name: faq.question,
+            acceptedAnswer: {
+                '@type': 'Answer',
+                text: faq.answer,
+            },
+        })),
+    };
+}
+
 // Helper to generate consistent metadata
 export function generateMetadata({
     title,

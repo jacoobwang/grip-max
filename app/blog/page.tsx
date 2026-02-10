@@ -8,6 +8,26 @@ export const metadata: Metadata = {
   title: "Blog - Car Care Tips & Guides | Grip Max",
   description:
     "Discover expert tips on steering wheel covers, car care guides, and driving accessories. Learn how to install, maintain, and style your steering wheel cover.",
+  keywords: [
+    "car care tips",
+    "steering wheel cover guide",
+    "car accessories blog",
+    "driving tips",
+  ],
+  openGraph: {
+    title: "Grip Max Blog - Car Care Tips & Guides",
+    description:
+      "Discover expert tips on steering wheel covers, car care guides, and driving accessories.",
+    type: "website",
+    images: [
+      {
+        url: "https://www.gripmax.cc/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Grip Max Blog",
+      },
+    ],
+  },
 };
 
 const blogPosts = [

@@ -4,16 +4,41 @@ import { ShareSection } from "@/components/blog/share-section";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
+import { getArticleSchema } from "@/lib/seo-utils";
 
 export const metadata: Metadata = {
   title: "How to Put on a Steering Wheel Cover | Grip Max",
   description:
     "Learn how to install a steering wheel cover with our step-by-step guide. Get a perfect, snug fit every time with these professional tips and techniques.",
+  keywords: [
+    "steering wheel cover installation",
+    "how to install steering wheel cover",
+    "steering wheel cover guide",
+    "car accessories installation",
+  ],
+  openGraph: {
+    type: "article",
+    publishedTime: "2026-02-05T00:00:00Z",
+  },
 };
 
 export default function BlogPostPage() {
+  const articleSchema = getArticleSchema({
+    title: "How to Put on a Steering Wheel Cover",
+    description:
+      "Learn how to install a steering wheel cover with our step-by-step guide. Get a perfect, snug fit every time with these professional tips and techniques.",
+    url: "https://www.gripmax.cc/blog/how-to-put-on-a-steering-wheel-cover",
+    image: "/logo.png",
+    datePublished: "2026-02-05T00:00:00Z",
+    dateModified: "2026-02-05T00:00:00Z",
+  });
+
   return (
     <main className="min-h-screen bg-black text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <Navbar />
 
       <article className="pt-32 pb-24 px-4">

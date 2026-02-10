@@ -20,6 +20,14 @@ export const metadata: Metadata = {
         description:
             "We didn't start in a boardroom. We started with a viral video and a community of car enthusiasts who demanded better.",
         type: "website",
+        images: [
+            {
+                url: "https://www.gripmax.cc/logo.png",
+                width: 1200,
+                height: 630,
+                alt: "About Grip Max",
+            },
+        ],
     },
 };
 export default function AboutPage() {

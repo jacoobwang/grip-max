@@ -10,11 +10,36 @@ export const metadata: Metadata = {
   title: "Premium Steering Wheel Covers - TikTok's Favorite | Grip Max",
   description:
     "Discover Grip Max - the viral steering wheel cover with 10,000+ happy customers. Premium Alcantara, carbon fiber, and luxury materials. Perfect fit guaranteed. Shop now!",
+  keywords: [
+    "steering wheel cover",
+    "premium steering wheel cover",
+    "alcantara steering wheel",
+    "carbon fiber steering wheel",
+    "TikTok car accessories",
+    "viral steering wheel cover",
+    "luxury car accessories",
+    "grip max",
+  ],
   openGraph: {
     title: "Grip Max - Premium Steering Wheel Covers",
     description:
       "Transform your driving experience with the steering wheel cover that took TikTok by storm. Premium materials, perfect fit.",
     type: "website",
+    images: [
+      {
+        url: "https://www.gripmax.cc/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Grip Max - Premium Steering Wheel Covers",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Grip Max - Premium Steering Wheel Covers",
+    description:
+      "Transform your driving experience with the steering wheel cover that took TikTok by storm. Premium materials, perfect fit.",
+    images: ["https://www.gripmax.cc/logo.png"],
   },
 };
 

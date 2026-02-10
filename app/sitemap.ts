@@ -54,5 +54,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
     ];
 
-    return [...staticRoutes, ...blogRoutes];
+    // Product routes - add your actual product IDs here
+    const productRoutes = [
+        {
+            url: `${baseUrl}/products/alcantara-premium`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/products/carbon-fiber-sport`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/products/luxury-leather`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.9,
+        },
+    ];
+
+    return [...staticRoutes, ...blogRoutes, ...productRoutes];
 }
