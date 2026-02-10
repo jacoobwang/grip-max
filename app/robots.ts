@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: ['/api/', '/_next/'],
         },
-        sitemap: 'https://gripmax.cc/sitemap.xml', // Update with your actual domain
+        sitemap: 'https://www.gripmax.cc/sitemap.xml', // Update with your actual domain
     };
 }

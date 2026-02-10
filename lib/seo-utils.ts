@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-export const BASE_URL = 'https://gripmax.cc'; // Update with your actual domain
+export const BASE_URL = 'https://www.gripmax.cc'; // Update with your actual domain
 
 // Organization JSON-LD Schema
 export function getOrganizationSchema() {

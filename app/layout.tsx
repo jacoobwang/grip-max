@@ -9,7 +9,7 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: "Grip Max | Premium Steering Wheel Covers - TikTok's Favorite",
+    default: "Grip Max | Premium Steering Wheel Covers - TikTok's Shop",
     template: "%s | Grip Max",
   },
   description:
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://gripmax.cc"), // Update with actual domain
+  metadataBase: new URL("https://www.gripmax.cc"), // Update with actual domain
   alternates: {
     canonical: "/",
   },
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     title: "Grip Max | Premium Steering Wheel Covers - TikTok's Favorite",
     description:
       "Transform your drive with Grip Max - the premium steering wheel cover that went viral on TikTok. Alcantara, carbon fiber, and premium materials.",
-    url: "https://gripmax.cc",
-    siteName: "Grip Max",
+    url: "https://www.gripmax.cc",
+    siteName: "Grip Max Steering Wheel Cover",
     images: [
       {
         url: "/logo.png",
@@ -94,8 +94,8 @@ export default function RootLayout({
     name: "Grip Max",
     description:
       "Premium steering wheel covers - TikTok's favorite car accessory brand",
-    url: "https://gripmax.cc",
-    logo: "https://gripmax.cc/logo.png",
+    url: "https://www.gripmax.cc",
+    logo: "https://www.gripmax.cc/logo.png",
     sameAs: [
       "https://www.tiktok.com/@gripmax", // Update with actual handle
       "https://www.instagram.com/gripmax", // Update with actual handle
