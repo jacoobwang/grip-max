@@ -49,6 +49,15 @@ const blogPosts = [
     readTime: "7 min read",
     category: "Product Guide",
   },
+  {
+    slug: "is-it-good-to-put-a-steering-wheel-cover-on",
+    title: "Is It Good to Put a Steering Wheel Cover On?",
+    excerpt:
+      "A clear, practical look at the pros, cons, and safety checks—plus how to choose a cover that improves grip and comfort without sacrificing control.",
+    date: "2026-02-16",
+    readTime: "8 min read",
+    category: "Buying Guide",
+  },
 ];
 
 export default function BlogPage() {

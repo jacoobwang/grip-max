@@ -52,6 +52,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.6,
         },
+        {
+            url: `${baseUrl}/blog/is-it-good-to-put-a-steering-wheel-cover-on`,
+            lastModified: new Date('2026-02-16'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.6,
+        },
     ];
 
     // Product routes - add your actual product IDs here
