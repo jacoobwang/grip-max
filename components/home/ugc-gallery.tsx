@@ -23,7 +23,7 @@ const VIDEOS = [
     },
     {
         id: "3",
-        thumbnailUrl: "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oMQYk2BphNLORFeehuTOeZsAgxIyseqQdA4sGc~tplv-tiktokx-origin.image?dr=9636&x-expires=1768305600&x-signature=viQ1X2pKoEfGUvfblIv/c/dCvo4=&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+        thumbnailUrl: "/ugc-3.png",
         views: "880K",
         author: "pukhtana874",
         description: "Installation took literally 30 seconds. Look at that finish. 🔥",
@@ -31,7 +31,7 @@ const VIDEOS = [
     },
     {
         id: "4",
-        thumbnailUrl: "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/o8VD2ATAEBeAQTFApowAzdrf2q2RCdEIFIE5FO~tplv-tiktokx-origin.image?dr=9636&x-expires=1768305600&x-signature=pjUXHDhSlbNoyqqfNbbyU+FRj9M=&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+        thumbnailUrl: "/ugc-4.png",
         views: "50K",
         author: "user708131458558",
         description: "You Just Installed the EASIEST Steering Wheel Cover EVER! & (White Leather Edition) 🌃",
