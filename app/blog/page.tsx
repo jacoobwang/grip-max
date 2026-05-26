@@ -32,6 +32,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "is-it-safe-to-drive-with-a-steering-wheel-cover",
+    title: "Is It Safe to Drive with a Steering Wheel Cover?",
+    excerpt:
+      "Are steering wheel covers safe? Explore the safety benefits, potential risks of low-quality covers, and how a premium steering wheel cover improves your grip and road safety.",
+    date: "2026-02-12",
+    readTime: "6 min read",
+    category: "Safety Guide",
+  },
+  {
     slug: "how-to-put-on-a-steering-wheel-cover",
     title: "How to Put on a Steering Wheel Cover",
     excerpt:
