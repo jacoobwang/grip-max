@@ -58,6 +58,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.6,
         },
+        {
+            url: `${baseUrl}/blog/is-it-safe-to-drive-with-a-steering-wheel-cover`,
+            lastModified: new Date('2026-02-12'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.6,
+        },
+        {
+            url: `${baseUrl}/blog/shine-bright-with-a-bling-steering-wheel-cover`,
+            lastModified: new Date('2026-06-07'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.6,
+        },
     ];
 
     // Product routes - add your actual product IDs here

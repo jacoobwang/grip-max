@@ -32,6 +32,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "shine-bright-with-a-bling-steering-wheel-cover",
+    title: "Shine Bright: The Ultimate Guide to Bling Steering Wheel Covers",
+    excerpt:
+      "Discover how to choose, install, and maintain a bling steering wheel cover. Add sparkle to your daily drive without sacrificing safety or comfort.",
+    date: "2026-06-07",
+    readTime: "6 min read",
+    category: "Style Guide",
+  },
+  {
     slug: "is-it-safe-to-drive-with-a-steering-wheel-cover",
     title: "Is It Safe to Drive with a Steering Wheel Cover?",
     excerpt:
